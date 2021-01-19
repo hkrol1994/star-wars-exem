@@ -39,7 +39,7 @@ fetch(url)
 const setCharctarFilms = () => {
   let result = [];
   for (let i = 0; i < charctarFilms.length; i++) {
-    result[i] = charctarFilms[i][charctarFilms[i].length - 2] * 1;
+    result[i] = parseInt(charctarFilms[i][charctarFilms[i].length - 2]);
   }
   return result;
 };
